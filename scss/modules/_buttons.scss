@@ -1,0 +1,115 @@
+.btn {
+  background: map-get($white, 'lightest');
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Amiko', sans-serif;
+  font-size: 13px;
+  line-height: 1em;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &.btn--primary {
+    border: 2px solid map-get($black, 'darkest');
+    transition: all 0.3s ease;
+
+    &:active {
+      top: 1px;
+    }
+
+    &:hover {
+      color: map-get($white, 'lightest');
+      background: map-get($black, 'darkest');
+    }
+
+    &.btn--success {
+      color: map-get($green, 'light');
+      border-color: map-get($green, 'light');
+
+      &:hover {
+        color: map-get($white, 'lightest');
+        background: map-get($green, 'light');
+      }
+    }
+
+    &.btn--error {
+      color: map-get($red, 'dark');
+      border-color: map-get($red, 'dark');
+
+      &:hover {
+        color: map-get($white, 'lightest');
+        background: map-get($red, 'dark');
+      }
+    }
+  }
+
+  &.btn--secondary {
+    border: 2px solid map-get($black, 'darkest');
+
+    &:active {
+      top: 1px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 0 1px map-get($black, 'darkest');
+    }
+
+    &.btn--success {
+      color: map-get($green, 'light');
+      border-color: map-get($green, 'light');
+
+      &:hover {
+        box-shadow: 0 0 0 1px map-get($green, 'light');
+      }
+    }
+
+    &.btn--error {
+      color: map-get($red, 'dark');
+      border-color: map-get($red, 'dark');
+
+      &:hover {
+        box-shadow: 0 0 0 1px map-get($red, 'dark');
+      }
+    }
+  }
+
+  &.btn--tertiary {
+    color: map-get($white, 'lightest');
+    background: map-get($black, 'darkest');
+    border: 2px solid map-get($black, 'darkest');
+    transition: box-shadow 0.15s ease;
+
+    &:active {
+      top: 1px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 0 1px map-get($black, 'darkest');
+    }
+
+    &.btn--success {
+      background: map-get($green, 'light');
+      border-color: map-get($green, 'light');
+
+      &:hover {
+        box-shadow: 0 0 0 1px map-get($green, 'light');
+      }
+    }
+
+    &.btn--error {
+      background: map-get($red, 'dark');
+      border-color: map-get($red, 'dark');
+
+      &:hover {
+        box-shadow: 0 0 0 1px map-get($red, 'dark');
+      }
+    }
+  }
+}
